@@ -1,0 +1,13 @@
+struct st
+{
+	int a;
+	char ch;	
+};
+
+int main()
+{
+	int a=1,b=10,c;
+	c=a+b;
+	printf("Addition:%d",c);
+	return 0;
+}

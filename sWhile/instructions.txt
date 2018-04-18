@@ -1,0 +1,23 @@
+# Install latest bison first
+lex while.l
+yacc while.y
+gcc y.tab.c -ll -ly
+
+
+
+rohit@rohit-Inspiron-5558:~/Downloads/While$ lex while.l
+rohit@rohit-Inspiron-5558:~/Downloads/While$ yacc while.y 
+rohit@rohit-Inspiron-5558:~/Downloads/While$ gcc y.tab.c -ll -ly
+rohit@rohit-Inspiron-5558:~/Downloads/While$ ./a.out
+Enter the expression : while(k=c/s)k=k*c+d;
+L1: 
+t0 = c / s
+k = t0
+t1 = not k
+if t1 goto L2
+t2 = k * c
+t3 = t2 + d
+k = t3
+goto L1 
+L2: 
+
